@@ -1,0 +1,5 @@
+<!--pages/wxml/index.wxml-->
+<text>pages/wxml/index.wxml</text>
+<view wx:for="{{array}}">
+  {{index}}: {{item.message}}
+</view>
