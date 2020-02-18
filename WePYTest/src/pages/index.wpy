@@ -1,0 +1,23 @@
+<template>
+  <child></child>
+  <button @tap="aaa">but</button>
+</template>
+
+<script>
+import wepy from 'wepy'
+import Child from '../components/child'
+
+export default class Index extends wepy.page {
+  components = {
+    child: Child
+  };
+  data = {
+    parentTitle: 'p-title'
+  };
+  methods = {
+    aaa() {
+      this.$broadcast('some-event', 2)
+    }
+  };
+}
+</script>

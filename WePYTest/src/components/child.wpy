@@ -1,0 +1,13 @@
+<template>
+ <button>but</button>
+</template>
+<script>
+import wepy from 'wepy'
+export default class Child extends wepy.component {
+  events = {
+    'some-event': (p1, p2) => {
+      console.log(p2)
+    }
+  };
+}
+</script>
